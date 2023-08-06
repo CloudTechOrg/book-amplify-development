@@ -12,9 +12,14 @@ exports.handler = async (event) => {
   try {
     const command = new PublishCommand(params);
     await sns.send(command);
-    return "メールの送信が成功しました！";
+    return {
+      statusCode: 200,
+      body: JSON.stringify("メールの送信が成功しました"),
+    };
   } catch (error) {
-    console.error("メールの送信に失敗しました:", error);
-    return "メールの送信に失敗しました！";
+    return {
+      statusCode: 500,
+      body: JSON.stringify("メールの送信に失敗しました"),
+    };
   }
 };
