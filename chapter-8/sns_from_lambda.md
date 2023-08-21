@@ -7,7 +7,7 @@
 "sendMailFunction": {
   "build": true,
   "providerPlugin": "awscloudformation",
-  "service": "Lambda",
+  "service": "Lambda", // カンマを追記
   // ここから
   "dependsOn": [
     {
@@ -45,12 +45,30 @@ $ amplify env checkout dev
       "Type": "String"
     }, "s3Key": {
       "Type": "String"
-    },
+    }, // カンマを追記
     //ここから
     "customsnssnsTopicArn": {
       "Type": "String"
     }
     //ここまでを追記
+},
+```
+
+```json
+"Environment": {
+  "Variables": {
+    "ENV": {
+      "Ref": "env"
+    },
+    "REGION": {
+      "Ref": "AWS::Region"
+    }, // カンマを追記
+    //ここから
+    "SNSTOPICARN": {
+      "Ref": "customsnssnsTopicArn"
+    }
+    //ここまでを追記
+  }
 },
 ```
 
