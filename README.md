@@ -62,6 +62,8 @@
 - [パターン２）CDK で SNS を構築しよう](./chapter-7/cdk.md)
 
   - [cdk-stack.ts](./chapter-7/src/cdk/cdk-stack.ts)
+ 
+- [フロントエンドに反映しよう](./chapter-7/frontend.md)
 
 ## 8 章
 
