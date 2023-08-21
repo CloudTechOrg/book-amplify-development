@@ -85,7 +85,8 @@ $ amplify env checkout dev
 ```json
 [
   {
-    "Resource": [{ "Ref": "customsnssnsTopicArn" }]
+    "Action": ["sns:Publish"],
+    "Resource": [ { "Ref" : "customsnssnsTopicArn" } ]
   }
 ]
 ```
