@@ -1,6 +1,6 @@
 ```sh
-$ git remote add origin
-https://git-codecommit.ap-northeast-1.amazon.com/v1/repos/amplify-handson
+$ git remote add origin \
+https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/amplify-handson
 ```
 
 ```sh
