@@ -76,6 +76,7 @@
 - パターン２）Go で Lambda 関数を作成しよう
 
   - [main.go](./chapter-8/src/go/main.go)
+  - [go.mod](./chapter-8/src/go/go.mod)
 
 - [Lambda から SNS を呼び出せるようにしよう](./chapter-8/sns_from_lambda.md)
 
