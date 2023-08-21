@@ -7,7 +7,7 @@ $ git add .
 ```
 
 ```sh
-$ git commit -m "Amplify "
+$ git commit -m "Amplifyハンズオンの開始"
 ```
 
 ```sh
