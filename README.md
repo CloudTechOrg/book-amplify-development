@@ -9,6 +9,7 @@
 ## 2 章
 
 - [Cloud9 の準備](./chapter-2/cloud9.md)
+  - [resize.sh](./chapter-2/src/cloud9/resize.sh)
 
 - [Amplify CLI のインストール](./chapter-2/amplify_cli.md)
 
