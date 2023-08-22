@@ -20,7 +20,7 @@ $ amplify add custom
         "repositoryUri"
       ]
     }
-  ],
+  ]
   // ここまで追記
 },
 ```
