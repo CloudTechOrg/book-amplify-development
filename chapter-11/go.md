@@ -1,10 +1,18 @@
+```sh
 $ mkdir apprunner
+```
 
+```sh
 $ mkdir apprunner
+```
 
+```sh
 $ go mod init apprunner
+```
 
+```sh
 $ touch Dockerfile main.go
+```
 
 **main.go**は[こちら](./src/go/main.go)
 
