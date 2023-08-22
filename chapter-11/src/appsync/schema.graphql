@@ -1,4 +1,10 @@
 type Query {
   lambdaInvoke: String @function(name: "lambda-${env}")
-  getAppRunnerResponse: String @http(url: "https://${env}.*******") #ここを追加
+  getAppRunnerResponse: ResponseMessage @http(url: "https://${env}.*******") #ここを追加
 }
+
+#ここから
+type ResponseMessage {
+  message: String
+}
+#ここまでを追加
