@@ -3,7 +3,7 @@ $ mkdir apprunner
 ```
 
 ```sh
-$ mkdir apprunner
+$ cd apprunner
 ```
 
 ```sh
