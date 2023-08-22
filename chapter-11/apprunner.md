@@ -10,7 +10,7 @@ $ amplify add custom
 ```json
 "apprunner": {
   "providerPlugin": "awscloudformation",
-  "service": "customCDK",
+  "service": "customCDK", // カンマを追記
   // ここから
   "dependsOn": [
     {
@@ -21,7 +21,7 @@ $ amplify add custom
       ]
     }
   ],
-  // ここまで追加
+  // ここまで追記
 },
 ```
 
