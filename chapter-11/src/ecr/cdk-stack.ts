@@ -20,6 +20,7 @@ export class cdkStack extends cdk.Stack {
     });
 
     const repository = new ecr.Repository(this, "Repo", {
+      repositoryName: `amplifyapp-ecr-${cdk.Fn.ref("env")}`,
       imageScanOnPush: true,
     });
 
