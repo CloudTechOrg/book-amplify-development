@@ -16,7 +16,7 @@ export class cdkStack extends cdk.Stack {
     const vpc = new ec2.Vpc(this, "AuroraVpc");
 
     const secret = new secretsmanager.Secret(this, "AuroraSecret", {
-      secretName: `rds-db-credentials`,
+      secretName: "rds-db-credentials",
       generateSecretString: {
         secretStringTemplate: JSON.stringify({ username: "clusteradmin" }),
         generateStringKey: "password",
